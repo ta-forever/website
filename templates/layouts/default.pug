@@ -6,7 +6,7 @@ html
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible" content="IE=edge")
 
-    title= title || 'Forged Alliance Forever'
+    title= title || 'Total Annihilation Forever'
     link(rel="shortcut icon", href="/images/favicon.png", type="image/png")
 
     // Fonts
@@ -36,48 +36,52 @@ html
       section.navigation-wrapper#header
         .top-navigation-wrapper
           nav.top-navigation
-            ul.top-navigation
-              li: a(href="https://forum.faforever.com/") Forums
-              li: a(href="https://wiki.faforever.com/index.php?title=Main_Page") Wiki
-              li: a(href="https://unitdb.faforever.com/") Unit Database
-              li: a(href="/livestream") Live Streams
-              li: a(href="https://discord.gg/hgvj6Af") Discord 
-                i.icon.fab.fa-discord
-              li: a.icon(href="https://www.youtube.com/c/ForgedAllianceForever")
-                i.fab.fa-youtube
-              li: a.icon(href="https://www.facebook.com/ForgedAllianceForever")
-                i.fab.fa-facebook-f
-              li: a.icon(href="https://github.com/FAForever/")
-                i.fab.fa-github
-              li: a.icon(href="https://twitter.com/falliancef")
-                i.fab.fa-twitter
-              li
-                form.nav-support-us(action='https://www.patreon.com/faf', method='get', target='_top')
-                  button(type='submit', name='submit')
-                    i.fab.fa-patreon(aria-hidden='true')
-                    span Support us
+            //-
+                ul.top-navigation
+                  li: a(href="https://forum.faforever.com/") Forums
+                  li: a(href="https://wiki.faforever.com/index.php?title=Main_Page") Wiki
+                  li: a(href="https://unitdb.faforever.com/") Unit Database
+                  li: a(href="/livestream") Live Streams
+                  li: a(href="https://discord.gg/hgvj6Af") Discord 
+                    i.icon.fab.fa-discord
+                  li: a.icon(href="https://www.youtube.com/c/ForgedAllianceForever")
+                    i.fab.fa-youtube
+                  li: a.icon(href="https://www.facebook.com/ForgedAllianceForever")
+                    i.fab.fa-facebook-f
+                  li: a.icon(href="https://github.com/FAForever/")
+                    i.fab.fa-github
+                  li: a.icon(href="https://twitter.com/falliancef")
+                    i.fab.fa-twitter
+                  li
+                    form.nav-support-us(action='https://www.patreon.com/faf', method='get', target='_top')
+                      button(type='submit', name='submit')
+                        i.fab.fa-patreon(aria-hidden='true')
+                        span Support us
+            //
         .main-navigation-wrapper
           nav.main-navigation
             a(href="/", class="nav-logo")
-              img(src="/images/faf-logo.png")
+              img(src="/images/taf-logo.png")
             ul.main-navigation
               li.mobile-nav-logo-wrapper: a(href="/", class="mobile-nav-logo")
-                img(src="/images/faf-logo.png")
-              li(class=(section == 'news' ? 'active' : null)): a(href='/news')
-                i.fas.fa-rss
-                span News
-              li(class=(section == 'competitive' ? 'active' : null)): a(href='/competitive/tournaments')
-                i.fas.fa-trophy
-                span Competitive
-              li(class=(section == 'clan' ? 'active' : null)): a(href='/clans')
-                i.fas.fa-users
-                span Clans
-              li(class=(section == 'contribution' ? 'active' : null)): a(href='/contribution')
-                i.fas.fa-heart
-                span Contribute
-              li(class=(section == "faq" ? 'active' : null)): a(href='https://forum.faforever.com/category/18/frequently-asked-questions')
-                i.fas.fa-question-circle
-                span FAQ
+                img(src="/images/taf-logo.png")
+              //-
+                  li(class=(section == 'news' ? 'active' : null)): a(href='/news')
+                    i.fas.fa-rss
+                    span News
+                  li(class=(section == 'competitive' ? 'active' : null)): a(href='/competitive/tournaments')
+                    i.fas.fa-trophy
+                    span Competitive
+                  li(class=(section == 'clan' ? 'active' : null)): a(href='/clans')
+                    i.fas.fa-users
+                    span Clans
+                  li(class=(section == 'contribution' ? 'active' : null)): a(href='/contribution')
+                    i.fas.fa-heart
+                    span Contribute
+                  li(class=(section == "faq" ? 'active' : null)): a(href='https://forum.faforever.com/category/18/frequently-asked-questions')
+                    i.fas.fa-question-circle
+                    span FAQ
+              //
               li.close-mobile-nav: button.toggle-nav
                 i.fas.fa-times
                 span Close menu
@@ -133,6 +137,7 @@ html
             .footer-top
           .footer-bottom-wrapper
             .footer-bottom
+            //-
               .footer-links
                 ul.footer-links
                   li.footer-support-us-wrapper
@@ -162,6 +167,7 @@ html
                   li
                     a(href="https://twitter.com/falliancef" title="Follow Forged Alliance Forever on Twitter" target="_blank")
                       i.fab.fa-twitter
+            //
 
 
       //- JAVASCRIPT

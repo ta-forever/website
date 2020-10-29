@@ -63,9 +63,11 @@ mixin tosagree(checked)
     .form-group
         label Agree to our Terms of Service:
           .input-group
-            p I have read and agree with our <a href="https://faforever.com/tos" rel="_new">Terms of Service</a>
+            p I have read and agree with our <a href="/tos" rel="_new">Terms of Service</a>
             input(type='checkbox', name='tosagree', required='required')
-        label Agree to our Privacy Statement:
-          .input-group
-            p I have read and agree with our <a href="https://faforever.com/privacy" rel="_new">Privacy Statement</a>
-            input(type='checkbox', name='privacyagree', required='required')
+        //-
+            label Agree to our Privacy Statement:
+              .input-group
+                p I have read and agree with our <a href="/privacy" rel="_new">Privacy Statement</a>
+                input(type='checkbox', name='privacyagree', required='required')
+        //

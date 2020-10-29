@@ -40,7 +40,7 @@ exports.getLatestClientRelease = function(req, res, next) {
         } catch (e) {
             exec('node scripts/getLatestClientRelease.js');
             clientLink = {};
-            clientLink.downlords_faf_client_link = 'https://github.com/FAForever/downlords-faf-client/releases';
+            clientLink.downlords_faf_client_link = 'https://github.com/TAForever/downlords-taf-client/releases';
         }
 
         locals.downlords_faf_client_download_link = clientLink.downlords_faf_client_link;

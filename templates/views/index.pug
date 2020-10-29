@@ -7,10 +7,10 @@ block content
             +flash-messages(flash)
         div.hero
         .introtitle
-            img(src="/images/vector_faf_logo.png")
+            img(src="/images/taf-logo.png")
             .hgroup
-                h1 Forged Alliance Forever
-                h3 The Community Driven Lobby for </br> Supreme Commander: Forged Alliance
+                h1 Total Annihilation Forever
+                h3 The Community Driven Lobby for </br> Total Annihilation
             p.counters Currently hosting 
                 span(id="player_counter").counter 0
                 |  players and running 
@@ -21,75 +21,63 @@ block content
         .col-md-3
         .col-md-6
             h1 The Project
-            p Forged Alliance Forever is a community-driven project designed to facilitate online play for Supreme Commander: Forged Alliance. Complete with chat, matchmaking, replay vaults, tournaments and ever evolving balance.
-            p If you want to experience Forged Alliance in its true glory together with thousands of other players of all skill levels, FAF is the place to be.
+            p Total Annihilation Forever is a project designed to facilitate online play for Total Annihilation. It is forked from the <a href="https://www.faforever.com">Forged Alliance Forever</a> project, includes at this time chat, matchmaking and player rating.
+            p If you want to experience Total Annihilation in its true glory together with other players of all skill levels, TAF is the place to be.
     .features: .container
         .row
             .col-md-2
             .col-md-4: .text-right
                 h3 Multiplayer
-                p Host and join teamgames with up to 16 players simultaneously or measure your skill against others in one versus one combat against players from all over the world.
+                p Host and join teamgames with up to 10 players simultaneously or measure your skill against others in one versus one combat against players from all over the world.
             .col-md-4
                 img(src="/images/multiplayer.png" class="img-responsive")
-        .row
-            .col-md-2
-            .col-md-4: .text-right
-                img(src="/images/coop.png" class="img-responsive")
-            .col-md-4
-                h3 Co-Op Campaign
-                p Enjoy the original Supreme Commander and Supreme Commander: Forged Alliance campaigns with up to 3 friends in addition to completely new custom made co-op campaign maps!
-        .row
-            .col-md-2
-            .col-md-4: .text-right
-                h3 Modding &amp; Map Making
-                p Experience countless variations on gameplay and thousands of player made maps to keep things fresh forever.
-            .col-md-4
-                img(src="/images/modding.png" class="img-responsive")
         .row
             .col-md-2
             .col-md-4: .text-right
                 img(src="/images/community.png" class="img-responsive")
             .col-md-4
                 h3 Community
-                p Meet casual to competitive gamers. Forged Alliance Forever is one of the best online gaming communities out there complete with forums, clans, wiki, and a supremely moderated global chat to enjoy between games.
+                p Meet casual to competitive gamers. Total Annihilation has a community of die hard players still looking for regular games after more than 20 yrs and are more than happy to welcome new players and returning old players alike.
         .row
             .col-md-2
             .col-md-4: .text-right
                 h3 Competitive
-                p Compete against some of the top players in FAF.
+                p Compete against some of the top players in TA.
                 ul.text-center.list-unstyled
                     each topPlayer in topPlayers
                         li= topPlayer.name + ' - ' + topPlayer.rank
             .col-md-4
-                img(src="/images/compete.jpg" class="img-responsive")
+                img(src="/images/compete.png" class="img-responsive")
     .what-is: .container
         .row
             .col-md-3
             .col-md-6.text-center
-                h1 What is Supreme Commander?
+                h1 What is Total Annihilation?
         .row.text-center
             .col-md-1
             .col-md-3
-                img(src="/images/strategic-zoom.png" class="img-responsive")
-                h3 Genre-Defining Command & Control
-                p Control your units from any vantage point. Issue orders from the theater of war commander's view, or zoom down into the heart of the battle and adjust your strategies on the fly.
+                img(src="/images/corecommander.png" class="img-responsive")
+                h3 Arm Verus Core Infinite War
+                p What began as a conflict over the transfer of conciousness from flesh to machines quickly escalated into a war which has decimated a million worlds
             .col-md-4
-                img(src="/images/destruction.png" class="img-responsive")
-                h2 Destruction On An Unparalleled Scale
-                p Attack with unique land, sea, and air units, wage war across frozen tundras, scorching deserts and vast oceans. Devastating experimental units will finish the job.
+                img(src="/images/original_and_best.png" class="img-responsive")
+                h2 Original and Best Gameplay
+                p Use the right tool to open up your opponent's base like a can of beans
             .col-md-3
-                img(src="/images/fourfactions.png" class="img-responsive")
-                h3 Four Unique Factions
-                p Unleash the most powerful weapon in the galaxy, the Supreme Commander, in one of four diverse factions: The United Earth Federation, The Cybran Nation, The Aeon Illuminate or The Order (Seraphim).
+                img(src="/images/armcommander.png" class="img-responsive")
+                h3 Genre-Defining Command & Control
+                p Control a brutal army of relentless robots to ensure the Total Annihilation of your opponent in the RTS that was first to enjoy real 3D physics simulation
         .row
             h3 We are international
             p Check out where the players are from:
             div#chart-div
         .row.text-center.buy-now
             hr
-            h3 In order to play Forged Alliance Forever, you must first install Supreme Commander: Forged Alliance.  You can purchase it for less than 10€, below:
+            h3 In order to play Total Annihilation, you must first have a copy installed on your computer.  You can purchase it for less than 10€, below:
             .col-md-12
-                a(href="https://store.steampowered.com/app/9420" class="btn btn-default btn-lg btn-outro btn-danger") Buy from Steam
+                a(href="https://store.steampowered.com/app/298030/Total_Annihilation/" class="btn btn-default btn-lg btn-outro btn-danger") Buy from Steam
+            .col-md-12
+                a(href="https://www.gog.com/game/total_anihilation_commander_pack" class="btn btn-default btn-lg btn-outro btn-danger") Buy from Good Old Games
 
 
 block js
