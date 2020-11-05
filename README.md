@@ -1,11 +1,11 @@
 # website
-FAForever main website on https://www.faforever.com
+TAForever main website on https://www.taforever.com
 
 Requires Node and NPM.
 To install it, follow these steps : 
 
 ```
-git clone https://github.com/FAForever/website.git
+git clone https://github.com/ta-forever/website.git
 cd website
 sudo npm install -g yarn
 yarn install

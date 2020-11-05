@@ -17,7 +17,7 @@ module.exports.run = function run() {
         console.log(moment().format("DD-MM-YYYY - HH:mm:ss") + ' - Link file incorrectly made. Data was - ' + data);
         //Write default values to file...
         data = {
-          downlords_faf_client_link: 'https://github.com/TAForever/downlords-taf-client/releases'
+          downlords_faf_client_link: 'https://github.com/ta-forever/downlords-taf-client/releases'
         };
         fs.writeFile("link.json", JSON.stringify(data), function(error) {
           if (error) {
@@ -31,10 +31,10 @@ module.exports.run = function run() {
   }
   
 	//Get main client
-	gh.getRepo('taforever', 'downlords-taf-client').getRelease('latest', function(err, release) {
+	gh.getRepo('ta-forever', 'downlords-taf-client').getRelease('latest', function(err, release) {
 		if (!err) {
 		  var exeAsset = release.assets.filter(function (asset) {
-        return asset.name.includes('.exe');
+        return asset.name.includes('.exe') || asset.name.includes('.zip');
       })[0];
 		  
 			var data = {
