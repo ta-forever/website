@@ -8,7 +8,7 @@ $badgeFont: 'Russo One', sans-serif
   overflow: hidden
   
 .newshub
-  max-width: 1270px
+  max-width: 1620px
   margin: auto
   padding-top: 25px
   color: rgb(214, 214, 214)
@@ -48,8 +48,10 @@ $badgeFont: 'Russo One', sans-serif
 
 // all article cells
 .cell
-  margin: 0px 0px 10px 0px
+  margin: 0px 0px 10px 10px
   overflow: hidden
+  text-align: justify
+  background-color: #1a1a1a
 
   &.hoverable:hover 
     background-color: #282833
@@ -72,7 +74,7 @@ $badgeFont: 'Russo One', sans-serif
     color: $headerColour
     font-family: $headerFont
   .articleImage 
-    margin: 0px 10px 0px 0px
+    margin: 0px 10px 10px 0px
 
   // nomads
   &.styleNomads
@@ -102,21 +104,21 @@ $badgeFont: 'Russo One', sans-serif
 
 // left column
 .column_left 
-  max-width: 744px
+  max-width: 1620px
 
   .cell
-    height: 170px
-    max-width: 372px
-    padding: 0px 0px 0px 10px
+    height: 260px
+    max-width: 550px
+    padding: 0px 10px 0px 10px
     float: left
 
     .articleTitle 
-      font-size: 17px
+      font-size: 37px
     .articleImage 
-      max-width: 150px
+      max-width: 340px
       float: left
       img 
-        max-width: 150px
+        max-width: 340px
     .articleSubtitle 
       display: none
     .articleParagraph 
@@ -143,7 +145,7 @@ $badgeFont: 'Russo One', sans-serif
           order: 1
       .articleSubtitle
         display: block
-        font-size: 16px
+        font-size: 28px
         margin: 0px 0px 2px 0px
         order: 3
       .articleParagraph
