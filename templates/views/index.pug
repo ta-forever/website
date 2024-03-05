@@ -16,8 +16,9 @@ block content
                 |  players and running 
                 span(id="game_counter").counter 0
                 |  games
-            a(class="btn btn-default btn-lg btn-outro btn-danger", href='/client') Download Client
-    .the-project: .container
+            a(class="btn btn-default btn-lg btn-outro btn-danger", href='https://github.com/ta-forever/downlords-taf-client/releases', target="_blank") Download from Github
+            a(class="btn btn-default btn-lg btn-outro btn-danger", href='https://www.mediafire.com/folder/hymxuvsejwbql/taf-client-releases', target="_blank") Download from Mediafire
+    .the-project: .container(style="padding-top: 100px;")
         .col-md-3
         .col-md-6
             h1 The Project
@@ -84,8 +85,6 @@ block content
             img(src="https://www.ej-technologies.com/images/product_banners/install4j_large.png" class="img-responsive")
             p TA Forever is optimised using the JProfiler <a href="https://www.ej-technologies.com/products/jprofiler/overview.html">java profiler</a> so that you have more CPU cycles left to play TA
             img(src="https://www.ej-technologies.com/images/product_banners/jprofiler_large.png" class="img-responsive")
-
-
 
 block js
   script const refreshCountersSeconds = !{refreshCountersSeconds};
